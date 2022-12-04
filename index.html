@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Edmund Hernandez - Final</title>
+	<link rel="stylesheet" href="hernandezCSS.css">
+</head>
+
+<body>
+	<div class="navbar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="rooster.html">Rooster</a></li>
+			<li><a href="frog.html">Frog</a></li>
+			<li><a href="gecko.html">Gecko</a></li>
+			<li><a href="zebra.html">Zebra</a></li>
+		</ul>
+	</div>
+	
+	<div class="content">
+		<p>This is the main page of my project</p>
+		<p><i>Welcome!</i></p>
+	</div>
+	
+	<div class="content">
+		<p>Random number:</p>
+		<button id="clickhere" onclick="randomScript()">Roll</button>
+	</div>
+	
+	<script>
+		function randomScript() {
+			document.getElementById("clickhere").innerHTML = Math.floor(Math.random() * 11);
+		}
+	</script>
+</body>
+
+</html>
